@@ -49,7 +49,7 @@ def move_files():
         fname = parts.split('.')[0]
         copyfile('training/image_2/'+fname+'.png', 
                 'sample/train/image_2/'+fname+'.png')
-        copyfile('train/label_2/'+fname+'.txt', 
+        copyfile('training/label_2/'+fname+'.txt', 
                 'sample/train/label_2/'+fname+'.txt')
 
     g = glob('valid/image_2/*.png')
