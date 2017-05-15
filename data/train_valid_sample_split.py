@@ -32,22 +32,22 @@ def make_dirs():
 
 
 def move_files():
-    g = glob('train/image_2/*.png')
+    g = glob('training/image_2/*.png')
     shuf = np.random.permutation(g)
     for i in range(int(len(shuf)*.15)):
         parts = shuf[i].split('/')[-1]
         fname = parts.split('.')[0]
-        move('train/image_2/'+fname+'.png', 
+        move('training/image_2/'+fname+'.png', 
                 'valid/image_2/'+fname+'.png')
-        move('train/label_2/'+fname+'.txt', 
+        move('training/label_2/'+fname+'.txt', 
                 'valid/label_2/'+fname+'.txt')
  
-    g = glob('train/image_2/*.png')
+    g = glob('training/image_2/*.png')
     shuf = np.random.permutation(g)
     for i in range(400):
         parts = shuf[i].split('/')[-1]
         fname = parts.split('.')[0]
-        copyfile('train/image_2/'+fname+'.png', 
+        copyfile('training/image_2/'+fname+'.png', 
                 'sample/train/image_2/'+fname+'.png')
         copyfile('train/label_2/'+fname+'.txt', 
                 'sample/train/label_2/'+fname+'.txt')

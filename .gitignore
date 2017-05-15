@@ -1,4 +1,4 @@
-data/train/*
-data/test/*
+data/training/*
+data/testing/*
 data/valid/*
 data/sample/*
