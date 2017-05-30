@@ -2,3 +2,4 @@ data/training/*
 data/testing/*
 data/valid/*
 data/sample/*
+*.docx
